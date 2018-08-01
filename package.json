@@ -1,0 +1,37 @@
+{
+  "name": "uni-wallet",
+  "productName": "Uni-Wallet",
+  "version": "1.0.1",
+  "description": "Demonstrates MultiChain API calls in an Electron Application",
+  "main": "main.js",
+  "repository": "https://github.com/royhodge/wallet",
+  "author": "UniBit Labs",
+  "license": "Unlicense",
+  "devDependencies": {
+    "electron": "^2.0.3",
+    "intro.js": "^2.9.3",
+    "multichain-api": "^1.0.0-alpha.8",
+    "multichain-node": "^2.1.6-version1.0.2",
+    "open-file-text-editor": "0.0.1"
+  },
+  "scripts": {
+    "start": "electron .",
+    "test": "mocha",
+    "package-linux": "electron-packager . uni-wallet --overwrite --platform=linux --arch=x64 --prune=true --out=release-builds"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "bootstrap": "^4.0.0-beta.3",
+    "intro.js": "^2.9.3",
+    "jquery": "^3.3.1",
+    "multichain-api": "^1.0.0-alpha.8",
+    "multichain-node": "^2.1.6-version1.0.2",
+    "popper.js": "^1.12.9",
+    "tether": "^1.4.0"
+  },
+  "standard": {
+    "globals": [
+      "$"
+    ]
+  }
+}
